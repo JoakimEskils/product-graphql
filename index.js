@@ -15,7 +15,7 @@ mongoose.connect(
 app.use(bodyParser.json());
 
 //IMPORT ROUTES
-require("./routes/productRoutes")(app);
+require("./routes/routes")(app);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
